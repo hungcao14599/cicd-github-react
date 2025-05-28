@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Github repo: cicd-github-react
+          Github repo: cicd-github-react - CI/CD using Github Actions
         </a>
       </header>
     </div>
