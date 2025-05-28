@@ -1,7 +1,8 @@
 {
   "projects": {
     "default": "cicd-github-react",
-    "viethung": "cicd-github-react-65cb5"
+    "viethung": "cicd-github-react-65cb5",
+    "alias": "cicd-github-react-65cb5"
   },
   "targets": {},
   "etags": {}

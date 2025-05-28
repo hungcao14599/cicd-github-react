@@ -30,9 +30,15 @@ jobs:
     - run: npm run build --if-present
     - run: npm test
     - name: Deploy to Firebase
-      run: firebase deploy --only hosting --project cicd-github-react-65cb5
+      # run: firebase deploy --only hosting --project cicd-github-react-65cb5
       uses: w9jds/firebase-action@v2.2.2
-      with:
-        args: deploy --only hosting
-      env:
-        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+      # with:
+      #   args: deploy --only hosting
+     env:
+      FIREBASE_TOKEN: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+    run: |
+      echo "${FIREBASE_TOKEN}" > $HOME/firebase-service-account.json
+      firebase deploy \
+        --only hosting \
+        --project cicd-github-react-65cb5 \
+        --token "$(firebase login:ci --cred $HOME/firebase-service-account.json)"
