@@ -4,6 +4,27 @@
     "viethung": "cicd-github-react-65cb5",
     "alias": "cicd-github-react-65cb5"
   },
-  "targets": {},
+  "targets": {
+    "cicd-github-react": {
+      "hosting": {
+        "production": [
+          "prod-site-210399"
+        ],
+        "staging": [
+          "staging-site-1405"
+        ]
+      }
+    },
+    "cicd-github-react-65cb5": {
+      "hosting": {
+        "staging": [
+          "staging-site-1405"
+        ],
+        "production": [
+          "prod-site-210399"
+        ]
+      }
+    }
+  },
   "etags": {}
 }

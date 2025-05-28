@@ -1,0 +1,19 @@
+name: Cleanup Firebase Preview Channel
+
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  cleanup:
+    if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🧹 Delete Firebase preview channel
+        uses: FirebaseExtended/action-hosting-delete@v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_CICD_GITHUB_REACT_65CB5 }}"
+          projectId: "cicd-github-react-65cb5"
+          channelId: "pr-${{ github.event.pull_request.number }}"
