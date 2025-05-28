@@ -1,0 +1,90 @@
+[debug] [2025-05-28T03:34:36.143Z] ----------------------------------------------------------------------
+[debug] [2025-05-28T03:34:36.144Z] Command:       /Users/viethung-phenikaax/.nvm/versions/node/v20.0.0/bin/node /Users/viethung-phenikaax/.nvm/versions/node/v20.0.0/bin/firebase init hosting
+[debug] [2025-05-28T03:34:36.144Z] CLI Version:   14.4.0
+[debug] [2025-05-28T03:34:36.144Z] Platform:      darwin
+[debug] [2025-05-28T03:34:36.144Z] Node Version:  v20.0.0
+[debug] [2025-05-28T03:34:36.144Z] Time:          Wed May 28 2025 10:34:36 GMT+0700 (Indochina Time)
+[debug] [2025-05-28T03:34:36.144Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-28T03:34:36.224Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-28T03:34:36.225Z] > authorizing via signed-in user (hungnguyen14599@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/viethung-phenikaax/Desktop/phenikaaX/cicd-github-react
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-05-28T03:34:36.226Z] Using project from CLI flag: cicd-github-react
+[debug] [2025-05-28T03:34:36.226Z] Checked if tokens are valid: true, expires at: 1748406653034
+[debug] [2025-05-28T03:34:36.226Z] Checked if tokens are valid: true, expires at: 1748406653034
+[debug] [2025-05-28T03:34:36.227Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cicd-github-react [none]
+[debug] [2025-05-28T03:34:36.720Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cicd-github-react 403
+[debug] [2025-05-28T03:34:36.720Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cicd-github-react {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-05-28T03:34:36.721Z] Request to https://firebase.googleapis.com/v1beta1/projects/cicd-github-react had HTTP Error: 403, The caller does not have permission
+[debug] [2025-05-28T03:34:36.847Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/cicd-github-react had HTTP Error: 403, The caller does not have permission
+    at responseToError (/Users/viethung-phenikaax/.nvm/versions/node/v20.0.0/lib/node_modules/firebase-tools/lib/responseToError.js:52:12)
+    at RetryOperation._fn (/Users/viethung-phenikaax/.nvm/versions/node/v20.0.0/lib/node_modules/firebase-tools/lib/apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project cicd-github-react. Please make sure the project exists and your account has permission to access it.
+[debug] [2025-05-28T03:41:01.833Z] ----------------------------------------------------------------------
+[debug] [2025-05-28T03:41:01.837Z] Command:       /Users/viethung-phenikaax/.nvm/versions/node/v20.0.0/bin/node /Users/viethung-phenikaax/.nvm/versions/node/v20.0.0/bin/firebase init hosting
+[debug] [2025-05-28T03:41:01.837Z] CLI Version:   14.4.0
+[debug] [2025-05-28T03:41:01.837Z] Platform:      darwin
+[debug] [2025-05-28T03:41:01.837Z] Node Version:  v20.0.0
+[debug] [2025-05-28T03:41:01.837Z] Time:          Wed May 28 2025 10:41:01 GMT+0700 (Indochina Time)
+[debug] [2025-05-28T03:41:01.837Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-28T03:41:01.920Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-28T03:41:01.920Z] > authorizing via signed-in user (hungnguyen14599@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/viethung-phenikaax/Desktop/phenikaaX/cicd-github-react
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-05-28T03:41:01.921Z] Using project from CLI flag: cicd-github-react
+[debug] [2025-05-28T03:41:01.922Z] Checked if tokens are valid: true, expires at: 1748406653034
+[debug] [2025-05-28T03:41:01.922Z] Checked if tokens are valid: true, expires at: 1748406653034
+[debug] [2025-05-28T03:41:01.922Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cicd-github-react [none]
+[debug] [2025-05-28T03:41:02.305Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cicd-github-react 403
+[debug] [2025-05-28T03:41:02.305Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cicd-github-react {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-05-28T03:41:02.306Z] Request to https://firebase.googleapis.com/v1beta1/projects/cicd-github-react had HTTP Error: 403, The caller does not have permission
+[debug] [2025-05-28T03:41:02.730Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/cicd-github-react had HTTP Error: 403, The caller does not have permission
+    at responseToError (/Users/viethung-phenikaax/.nvm/versions/node/v20.0.0/lib/node_modules/firebase-tools/lib/responseToError.js:52:12)
+    at RetryOperation._fn (/Users/viethung-phenikaax/.nvm/versions/node/v20.0.0/lib/node_modules/firebase-tools/lib/apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project cicd-github-react. Please make sure the project exists and your account has permission to access it.
