@@ -36,7 +36,12 @@ jobs:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_CICD_GITHUB_REACT_65CB5 }}"
           projectId: "cicd-github-react-65cb5"
-          channelId: live
+        run: |
+          npx firebase-tools@latest hosting:channel:deploy pr-${{ github.run_number }} \
+            --only hosting:staging \
+            --expires 7d \
+            --project cicd-github-react-65cb5
+
 
       - name: 💬 Comment preview URL on PR
         uses: thollander/actions-comment-pull-request@v2
