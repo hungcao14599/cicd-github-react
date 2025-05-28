@@ -11,7 +11,7 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://github.com/gabepublic/cicd-github-react"
+          href="https://github.com/hungcao14599/cicd-github-react"
           target="_blank"
           rel="noopener noreferrer"
         >
