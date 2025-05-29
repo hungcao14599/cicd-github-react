@@ -35,8 +35,11 @@ jobs:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_CICD_GITHUB_REACT_65CB5 }}"
           projectId: "cicd-github-react-65cb5"
+          channelId: "staging-preview-${{ github.run_number }}"
           target: "staging"
+          expires: 7d
 
+   
       - name: 🚀 Deploy to Firebase Hosting (Production)
         if: github.ref == 'refs/heads/main'
         uses: FirebaseExtended/action-hosting-deploy@v0
@@ -44,4 +47,6 @@ jobs:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_CICD_GITHUB_REACT_65CB5 }}"
           projectId: "cicd-github-react-65cb5"
+          channelId: "production-preview-${{ github.run_number }}"
           target: "production"
+          expires: 7d
