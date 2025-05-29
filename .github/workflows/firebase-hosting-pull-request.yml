@@ -36,7 +36,6 @@ jobs:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_CICD_GITHUB_REACT_65CB5 }}"
           projectId: "cicd-github-react-65cb5"
-          channelId: live
 
 
       - name: 💬 Comment preview URL on PR
